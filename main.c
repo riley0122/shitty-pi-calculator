@@ -21,7 +21,7 @@ int main(int argc, char* argv[]){
         pi += term;
         int barWidth = 40;
         int filledWidth = (i * barWidth) / count;
-        int emptyWidth = barWidth - filledWidth;
+        int emptyWidth = 40 - filledWidth;
         printf("[Current aproximation] %.5f", 4*pi);
         char* buffer[filledWidth + 1];
         memset(buffer, '=', filledWidth);

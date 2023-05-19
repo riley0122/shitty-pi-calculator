@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string.h>
 
 #define PI 3.14159265359
 
@@ -18,18 +19,19 @@ int main(int argc, char* argv[]){
     for(int i = 0; i < count; i++){
         term = (i % 2 == 0) ? 1.0 / (2 * i + 1) : -1.0 / (2 * i + 1);
         pi += term;
-        const int barWidth = 40;
+        int barWidth = 40;
         int filledWidth = (i * barWidth) / count;
         int emptyWidth = barWidth - filledWidth;
         printf("[Current aproximation] %.5f", 4*pi);
-        printf("[");
-        for (int i = 0; i < filledWidth; i++) {
-            printf("=");
-        }
-        for (int i = 0; i < emptyWidth; i++) {
-            printf("-");
-        }
-        printf("] %d%% iteration: %d\r", (i * 100) / count, i);
+        char* buffer[filledWidth + 1];
+        memset(buffer, '=', filledWidth);
+        buffer[filledWidth] = 0;
+
+        char* buffer1[emptyWidth + 1];
+        memset(buffer1, '-', emptyWidth);
+        buffer1[emptyWidth] = 0;
+
+        printf("[%s%s] %d%% iteration: %d                                                    \r", buffer, buffer1, (i * 100) / count, i);
 
     }
 

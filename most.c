@@ -7,14 +7,6 @@ float pi = 0.0;
 float term;
 int ending = 0;
 
-void clearScreen() {
-    #ifdef _WIN32
-        system("cls");  // Windows method
-    #else
-        printf("\033[2J\033[1;1H");  // Unix/Linux method
-    #endif
-}
-
 void end(){
     ending = 1;
     printf("\n");

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <semantics>
+  <mrow>
+   <mfrac>
+    <mi>π</mi>
+    <mn>4</mn>
+   </mfrac>
+   <mo stretchy="false">=</mo>
+   <mrow>
+    <munderover>
+     <mo stretchy="false">∑</mo>
+     <mrow>
+      <mi>n</mi>
+      <mo stretchy="false">=</mo>
+      <mn>1</mn>
+     </mrow>
+     <mi>&infin;</mi>
+    </munderover>
+    <mrow>
+     <msup>
+      <mrow>
+       <mo fence="true" form="prefix" stretchy="false">(</mo>
+       <mrow>
+        <mrow>
+         <mo stretchy="false">−</mo>
+         <mn>1</mn>
+        </mrow>
+       </mrow>
+       <mo fence="true" form="postfix" stretchy="false">)</mo>
+      </mrow>
+      <mrow>
+       <mo fence="true" form="prefix" stretchy="false">(</mo>
+       <mrow>
+        <mrow>
+         <mi>n</mi>
+         <mo stretchy="false">+</mo>
+         <mn>1</mn>
+        </mrow>
+       </mrow>
+       <mo fence="true" form="postfix" stretchy="false">)</mo>
+      </mrow>
+     </msup>
+     <mo stretchy="false">/</mo>
+     <mrow>
+      <mo fence="true" form="prefix" stretchy="false">(</mo>
+      <mrow>
+       <mrow>
+        <mn>2</mn>
+        <mrow>
+         <mi>n</mi>
+         <mo stretchy="false">−</mo>
+         <mn>1</mn>
+        </mrow>
+       </mrow>
+      </mrow>
+      <mo fence="true" form="postfix" stretchy="false">)</mo>
+     </mrow>
+    </mrow>
+   </mrow>
+  </mrow>
+  <annotation encoding="StarMath 5.0">π over 4 = sum from {n=1} to &infin; {(-1)^(n+1)/(2n-1)}</annotation>
+ </semantics>
+</math>

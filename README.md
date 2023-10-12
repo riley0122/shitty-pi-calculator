@@ -8,10 +8,4 @@ We are using the formuala $$ π / 4 = Σ((-1)^(n+1) / (2n-1)) $$
 
 ## running
 
-run
-`./a.out [iterations]` or `.\a.exe [iterations]`
-to calculate to a certain amount of iterations.
-
-run
-`./f.out` or `.\f.exe`
-to calculate as much as possible (will use more cpu)
+Check the [latest release](https://github.com/lucasammer/shitty-pi-calculator/releases/latest) on how to run.

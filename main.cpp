@@ -10,6 +10,21 @@ float calculated = pow(-1, 1 + 1) / (2 * 1 - 1);
 
 int main(int argc, char *argv[])
 {
-    std::cout << calculated << std::endl;
+    unsigned int iterations = 100;
+    if (argc > 1)
+        iterations = atoi(argv[1]);
+
+    std::cout << "doing " << iterations << " iterations";
+
+    for (unsigned int i = 0; i < iterations; i++)
+    {
+        calculated = calculated + pow(-1, i + 1) / (2 * i - 1);
+        if (i % 100 == 0)
+        {
+            std::cout << "Current iteration: " << i << std::endl;
+        }
+    }
+
+    std::cout << calculated * 4 << std::endl;
     return 0;
 }

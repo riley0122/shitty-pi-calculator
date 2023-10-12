@@ -29,6 +29,6 @@ int main(int argc, char *argv[])
 
     std::cout << std::endl
               << "Our approximation: " << calculated * 4 << std::endl
-              << "Actual pi: " << PI;
+              << "Actual pi: " << PI << std::endl;
     return 0;
 }

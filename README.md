@@ -4,7 +4,7 @@
 
 We are using the formuala $$ π / 4 = Σ((-1)^(n+1) / (2n-1)) $$
 
-[See how it works](https://www.desmos.com/calculator/7bzf0oq0g5)
+[See how it works](https://www.desmos.com/calculator/d6fyv6zqzd)
 
 ## running
 

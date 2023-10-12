@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include <cmath>
 // π/4 = Σ((-1)^(n+1) / (2n-1))
 // π over 4 = sum from {n=1} to ∞ {(-1)^(n+1)/(2n-1)}
@@ -6,7 +7,7 @@
 
 #define PI 3.14159
 
-float calculated = 0;
+double calculated = 0;
 
 int main(int argc, char *argv[])
 {
@@ -21,11 +22,13 @@ int main(int argc, char *argv[])
         calculated += pow(-1, i + 1) / ((2 * i) - 1);
         if (i % 100 == 0)
         {
-            std::cout << "Current iteration: " << i << std::endl;
-            std::cout << "Current Aproximation: " << calculated << std::endl;
+
+            std::cout << "Current iteration: " << i << " Current Approximation: " << std::setprecision(ceil(i / 1000000) + 15) << calculated * 4 << "\r";
         }
     }
 
-    std::cout << calculated * 4 << std::endl;
+    std::cout << std::endl
+              << "Our approximation: " << calculated * 4 << std::endl
+              << "Actual pi: " << PI;
     return 0;
 }

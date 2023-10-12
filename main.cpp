@@ -6,7 +6,7 @@
 
 #define PI 3.14159
 
-float calculated = pow(-1, 1 + 1) / (2 * 1 - 1);
+float calculated = 0;
 
 int main(int argc, char *argv[])
 {
@@ -14,14 +14,15 @@ int main(int argc, char *argv[])
     if (argc > 1)
         iterations = atoi(argv[1]);
 
-    std::cout << "doing " << iterations << " iterations";
+    std::cout << "doing " << iterations << " iterations" << std::endl;
 
-    for (unsigned int i = 0; i < iterations; i++)
+    for (unsigned int i = 1; i < iterations; i++)
     {
-        calculated = calculated + pow(-1, i + 1) / (2 * i - 1);
+        calculated += pow(-1, i + 1) / ((2 * i) - 1);
         if (i % 100 == 0)
         {
             std::cout << "Current iteration: " << i << std::endl;
+            std::cout << "Current Aproximation: " << calculated << std::endl;
         }
     }
 
